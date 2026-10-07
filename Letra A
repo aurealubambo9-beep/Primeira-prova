@@ -1,0 +1,14 @@
+public static void rotacionar(int [] v, int tam, int k) {
+    if (tam == 0) {
+        return;
+    }
+    if (k >= 0) {
+        for(int c = 0; c < k; c += 1) {
+            rotacionarEsq(v, tam);
+        }
+    } else {
+        for(int c = 0; c < -k; c += 1) {
+            rotacionarDir(v, tam);
+        }
+    }
+}

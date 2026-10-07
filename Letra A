@@ -1,0 +1,10 @@
+public static int uniao(int [] a, int tamA, int [] b, int tamB, int [] u) {
+    int tamU = 0;
+    for (int i = 0; i < tamA; i += 1) {
+        tamU = inserirSemRepetir(u, tamU, a[i]);
+    }
+    for (int i = 0; i < tamB; i += 1) {
+        tamU = inserirSemRepetir(u, tamU, b[i]);
+    }
+    return tamU;
+}
